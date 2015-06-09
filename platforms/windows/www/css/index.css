@@ -1,0 +1,154 @@
+﻿/* Add your CSS here */
+.content, #app {
+    height: calc(100% - 72px);
+}
+
+    /* SplitView pane content style*/
+    #app .header {
+        white-space: nowrap;
+    }
+
+    #app .title {
+        font-size: 25px;
+        left: 50px;
+        margin-top: 6px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    #app .nav-commands {
+        margin-top: 20px;
+    }
+
+.win-navbarcommand-button {
+    background-color: transparent;
+}
+
+#app .win-splitview-pane-hidden .win-navbarcommand-button {
+    width: 46px;
+}
+
+#app .win-splitview-pane-hidden .win-navbarcommand-label {
+    /* Workaround: Make sure pane doesn't scroll if ContentDialog restores focus to
+       NavBarCommand's label
+    */
+    visibility: hidden;
+}
+
+#app .win-splitview-pane {
+    background-color:rgb(112,112,112);
+}
+
+/*SplitView pane style for different screen sizes*/
+#app.large .splitView {
+    width: 100%;
+}
+
+#app.large .win-splitview-content .win-splitview-button {
+    display: none;
+}
+
+#app.medium .splitView {
+    width: 80%
+}
+
+#app.medium .win-splitview-content .win-splitview-button {
+    display: none;
+}
+
+#app.small .splitView {
+    width: 100%;
+}
+
+/*SplitView content style*/
+#app .win-splitview-content {
+    /*background-color: rgb(112,112,112);*/
+}
+
+#app .contenttext {
+    margin-left: 20px;
+    margin-top: 6px;
+    height:100%;
+}
+
+/*SplitView pane show button style*/
+button.win-splitview-button {
+    float: left;
+    box-sizing: border-box;
+    height: 48px;
+    width: 48px;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    border: 1px dotted transparent;
+    margin: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+html.win-hoverable button.win-splitview-button:hover {
+    /*background-color: rgba(255,255,255, 0.1);*/
+}
+
+button.win-splitview-button.win-splitview-button:active,
+button.win-splitview-button.win-splitview-button:hover:active {
+    /*background-color: rgba(255,255,255, 0.2);*/
+}
+
+button.win-splitview-button.win-keyboard:focus {
+    /*border-color: rgb(255, 255, 255);*/
+}
+
+button.win-splitview-button:after {
+    font-size: 24px;
+    font-family: 'Segoe MDL2 Assets', 'Symbols';
+    content: "\E700";
+}
+
+
+.mapContainer {
+    width: calc(100% - 20px);
+    height: 250px;
+}
+
+
+#listView
+{
+    width: 100%;
+}
+
+
+/* Template for the items in the ListViews */
+.smallListIconTextItem {
+    width: 242px;
+    height: 70px;
+    padding: 5px;
+    overflow: hidden;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+    .smallListIconTextItem img.smallListIconTextItem-Image {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        margin-right: 20px;
+    }
+
+    .smallListIconTextItem .smallListIconTextItem-Detail {
+        margin: 5px;
+    }
+
+.listLayoutTopHeaderTemplateRoot {
+    font-size: larger;
+    margin-left: 16px;
+}
+    
+/* CSS applied to the ListViews in this sample */
+#listView
+{
+    height: 100%;
+}
+
+

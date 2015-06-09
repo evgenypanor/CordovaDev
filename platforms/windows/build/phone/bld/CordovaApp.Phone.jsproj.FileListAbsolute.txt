@@ -1,0 +1,17 @@
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\release\anycpu\resources.pri
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\release\anycpu\AppxManifest.xml
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\release\anycpu\CordovaApp.Phone.build.appxrecipe
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\priconfig.xml
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\priconfig.xml.intermediate
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\layout.resfiles
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\layout.resfiles.intermediate
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\resources.resfiles
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\resources.resfiles.intermediate
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\pri.resfiles
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\pri.resfiles.intermediate
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\qualifiers.txt
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\qualifiers.txt.intermediate
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\MultipleQualifiersPerDimensionFound.txt
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\ProjectArchitectures.txt
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\package.map.txt
+C:\Projects\Mobile\2015\CordovaWinJS\CordovaWinJS\WinJSNavigation\platforms\windows\build\phone\bld\_pkginfo.txt

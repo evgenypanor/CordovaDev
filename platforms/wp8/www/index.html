@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>WinJSNavigation</title>
+
+    <!-- WinJSNavigation references -->
+
+
+    <link href="WinJS/css/ui-dark.css" rel="stylesheet" />
+    <!--<link href="WinJS/css/ui-light.css" rel="stylesheet" />-->
+    <link href="css/index.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwtk1tBc0vLvpujH7tw9lgEDPPjV2PedM"></script>
+    <script src="WinJS/js/WinJS.js"></script>
+    <script src="JQuery/jquery-2.1.4.min.js"></script>
+    <script src="scripts/services.js"></script>
+    <script src="scripts/index.js"></script>
+
+
+    <div id="app" class="small">
+        <!--<div class="radiodiv">
+            <label><h3>Window sizes:</h3></label>
+            <input type="radio" name="placement" value="large" checked="checked" id="largescreen" data-win-bind="onclick: radioChanged" /><label for="largescreen">Large screen</label>
+            <input type="radio" name="placement" value="medium" id="mediumscreen" data-win-bind="onclick: radioChanged" /><label for="mediumscreen">Medium screen</label>
+            <input type="radio" name="placement" value="small" id="smallscreen" data-win-bind="onclick: radioChanged" /><label for="smallscreen">Small screen</label>
+        </div>-->
+
+        <div class="splitView" data-win-control="WinJS.UI.SplitView" data-win-options="{
+            shownDisplayMode: 'overlay',
+            hiddenDisplayMode: 'none'
+         }">
+            <!-- Pane area -->
+            <div>
+                <div class="header">
+                    <button type="button" class="win-splitview-button" onclick="Sample.togglePane();"></button>
+                    <div class="title">Menu</div>
+                </div>
+
+                <div class="nav-commands">
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Home', icon: 'home'}"></div>
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Favorite', icon: 'favorite'}"></div>
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Settings', icon: 'settings'}"></div>
+                    <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Login', icon: 'settings'}"></div>
+                </div>
+            </div>
+
+            <!-- Content area -->
+            <button type="button" class="win-splitview-button" onclick="Sample.togglePane();"></button>
+            <div class="contenttext">
+                TLV Mobile
+                <div id="appPagesList" data-win-control="WinJS.UI.Pivot" data-win-options="{ selectedIndex: 0 }">
+                    <div data-win-control="WinJS.UI.PivotItem" data-win-options="{ 'header': 'Home' }">
+                        <h2>This is sample navigation mobile app based on VS 2015 Cordova integration</h2>
+                    </div>
+                    <div data-win-control="WinJS.UI.PivotItem" data-win-options="{ 'header': 'Camera' }">
+                        <div class="renderingPageControls-htmlControl" data-win-control="WinJS.UI.HtmlControl"
+                             data-win-options="{uri: 'Pages/CameraPage/CameraPage.html' }"></div>
+                    </div>
+                    <div data-win-control="WinJS.UI.PivotItem" data-win-options="{ 'header': 'Location' }">
+                        <div>
+                            <button id="locationButton" onclick="Locate()" class="navButton" data-textonly="false" data-textvisible="true" data-msgtext="" data-inline="true">Get Location</button>
+                            <br />
+                            <div id="mapDiv" class="mapContainer"></div>
+                        </div>
+                    </div>
+                    <div data-win-control="WinJS.UI.PivotItem" data-win-options="{ 'header': 'External' }">
+                        <div class="smallListIconTextTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+                            <div class="smallListIconTextItem">
+                                <img src="#" class="smallListIconTextItem-Image" data-win-bind="src: Picture" />
+                                <div class="smallListIconTextItem-Detail">
+                                    <h4 data-win-bind="textContent: Title"></h4>
+                                    <h6 data-win-bind="textContent: Text"></h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="listView"
+                             class="win-selectionstylefilled"
+                             data-win-control="WinJS.UI.ListView"
+                             data-win-options="{
+                                                        itemDataSource: WinJSCordova.ListView.data.dataSource,
+                                                        itemTemplate: select('.smallListIconTextTemplate'),
+                                                        selectionMode: 'single',
+                                                        tapBehavior: 'toggleSelect',
+                                                        layout: { type: WinJS.UI.ListLayout }
+                                                }">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

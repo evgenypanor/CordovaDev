@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera</title>
+    <link href="Camera.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <div class="camera fragment">
+            <header aria-label="Header content" role="banner">
+                <h1 class="titlearea win-type-ellipsis">
+                    <span class="pagetitle">Camera</span>
+                </h1>
+            </header>
+            <section aria-label="Main content" role="main">
+                <img id="myImage" width="150px" height="150px" alt="" />
+                <button id="captureButton" onclick="CaptureImage()" class="navButton" data-textonly="false" data-textvisible="true" data-msgtext="Capturing" data-inline="true">Capture</button>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function CaptureImage() {
+
+            navigator.camera.getPicture(onSuccess, onFail, {
+                quality: 50,
+                destinationType: Camera.DestinationType.FILE_URI
+            });
+        }
+
+        function onSuccess(imageURI) {
+            var image = document.getElementById('myImage');
+            image.src = imageURI;
+        }
+
+        function onFail(message) {
+            alert('Failed because: ' + message);
+        }
+    </script>
+</body>
+</html>
